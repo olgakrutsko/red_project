@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Red Project</title>
-    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700|Sintony:700" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
-	
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i|Sintony:700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">	
 </head>
-    <body>
-    	<!--<header>
+<body>
+    <header>
+        <div class="navigation">
             <div class="logo">
                 <img src="images/Logo.svg">
             </div>
@@ -31,92 +31,101 @@
                     </li>
     			</ul>
     		</nav>
-    	</header> -->
-    	<main>
-    	   <!-- <section class="intro">
-                <div class="content">
-                    <div class="text">
-    				    <h1>Premium Quality & Tradition</h1>
-    				    <p>SINCE 1978</p>
+        </div>
+    </header> 
+    <main>
+    	<section class="intro">               
+            <div class="intro-text container">
+    			<h1>Premium Quality & Tradition</h1>
+                <div class="since">
+                    <img src="images/Left Line.svg">
+    				<p>SINCE 1978</p>
+                    <img src="images/Right Line.svg">
+                </div>  
+                <div class="arrow">
+                    <img src="images/Scroll Arrow.svg">
+                </div>                      
+            </div>                                       			
+    	</section> 
+
+        <section class="team">
+            <div class="section title">
+                <h2>Meet Our Team</h2>
+                <img src="images/About Us Underline.svg" class="underline">
+            </div>
+            <div class="team container">
+                <article class="member one">
+                    <div class="avatar">
+                        <img src="images/Avatar.jpg">
                     </div>
-                    <div class="scroll-arrow">
-                        <img src="images/Scroll Arrow.svg">
-                    </div> 
-                </div>          				
-    		</section> -->
-
-            <section class="team">
-                <div class="section title">
-                    <h2>Meet Our Team</h2>
-                    <img src="images/About Us Underline.svg" class="underline">
-                </div>
-                <div class="team container">
-                    <article class="member one">
-                        <div class="avatar">
-                             <img src="images/Avatar.jpg">
-                        </div>
-                        <h3>Dennis Kim</h3>
-                        <p>In the tumultuous business of cutting-in and attending to a whale, there is much running backwards and forwards among the crew.</p>
-                    </article>
-                    <article class="member two">
-                             <div class="avatar">
+                    <h3>Dennis Kim</h3>
+                    <p>In the tumultuous business of cutting-in and attending to a whale, there is much running backwards and forwards among the crew.</p>
+                </article>
+                <article class="member two">
+                    <div class="avatar">
                         <img src="images/Avatar1.png">
-                        </div>
-                        <h3>Sara McCoy</h3>
-                        <p>In the tumultuous business of cutting-in and attending to a whale, there is much running backwards and forwards among the crew.</p>
-                    </article>
-                    <article class="member three">
-                             <div class="avatar">
+                    </div>
+                    <h3>Sara McCoy</h3>
+                    <p>In the tumultuous business of cutting-in and attending to a whale, there is much running backwards and forwards among the crew.</p>
+                </article>
+                <article class="member three">
+                    <div class="avatar">
                         <img src="images/Avatar.png">
-                        </div>
-                        <h3>Emily Porter</h3>
-                        <p>In the tumultuous business of cutting-in and attending to a whale, there is much running backwards and forwards among the crew.</p>
-                    </article>
-                </div>
-            </section>
+                    </div>
+                    <h3>Emily Porter</h3>
+                    <p>In the tumultuous business of cutting-in and attending to a whale, there is much running backwards and forwards among the crew.</p>
+                </article>
+            </div>
+        </section>
 
-            <section class="social">
-                <div class="social container">
-                    <div class="slider">
+        <section class="social">
+            <div class="social container">
+                <div class="slider">
                         <img src="images/Left arrow.png">
                         <img src="images/Image 1.png">
                         <img src="images/Image 2 Mouse Over.png">
                         <img src="images/Image 3.png">
                         <img src="images/Image 4.png">
                         <img src="images/Right Arrow.png">
-                    </div>
-                    <div class="follow">
-                        <a href="" class="button">
-                            <img src="images/Follow Us Button.png">
-                        </a>    
-                    </div>
                 </div>
-            </section>
+                <div class="follow">
+                    <a href="" class="button">
+                        <img src="images/Follow Us Button.png">
+                    </a>    
+                </div>
+            </div>
+        </section>
 
-            <section class="contact">
-                <h2>Contact Us</h2>
-                <img src="images/About Us Underline.svg">
+        <section class="contact">
+                <div class="section title">
+                   <h2>Contact Us</h2>
+                   <img src="images/About Us Underline.svg">
+                </div>
                 <div class="contact container">
                     <div class="form">
                         <form action="" method="POST">
-                            <input type="text" name="Full Name">
+                            <input type="text" placeholder="Full Name">
                             <br>
-                            <input type="mail" name="contact@email.com">
+                            <input type="mail" placeholder="contact@email.com">
                             <br>
-                            <input type="text" name="Message">
+                            <textarea rows="4" cols="54" name="comment" form="usrform" placeholder="Message">Message
+                            </textarea> 
+                            <!--<input type="message" placeholder="Message">-->
+                            <br>
                             <button type="submit">SEND</button>
                         </form>
                     </div>
-                    <div class="map container">
-                        <div class="map"></div>
-                        <p>811 7th Avenue 53rd Street
-                           New York, 10019, United States</p>
+                    <div class="map container">                       
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.978380228511!2d-73.98345804885578!3d40.76250024235961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258f85f98272f%3A0x7ab3fbafc075fad7!2s811+7th+Ave%2C+New+York%2C+NY+10019%2C+USA!5e0!3m2!1sen!2slt!4v1545129954941" width="450" height="280" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            <div class="adress">
+                              <p>811 7th Avenue 53rd Street
+                              New York, 10019, United States</p>
+                           </div>
                     </div>
                 </div>
-            </section>
-    	</main>
-
-    	<footer>
+        </section>
+    </main>
+    <footer>
          <div class="footer container">
              <div class="footer nav">
                   <ul>
@@ -126,7 +135,9 @@
                     <li>
                         <a href="">ABOUT US</a>
                     </li>
+                    <li>
                          <img src="images/Footer Logo.png">
+                    </li>     
                     <li>
                         <a href="">SOCIAL</a>
                     </li>
@@ -142,7 +153,6 @@
                  <p>Copyright 2015, All Rights Reserved.</p>
              </div>
          </div>   
-        </footer>  
-
-    </body>
+    </footer>  
+</body>
 </html>    
