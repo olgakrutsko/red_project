@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Red Project</title>
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i|Sintony:700" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">	
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">	
 </head>
-<body>
+<body id="home page">
     <header>
         <div class="navigation">
             <div class="logo">
@@ -18,37 +18,35 @@
     		<nav>
     			<ul>
     			    <li>
-    			    	<a href="">HOME</a>
+    			    	<a href="#home">HOME</a>
     			    </li>
     			    <li>
-    			    	<a href="">ABOUT US</a>
+    			    	<a href="#about">ABOUT US</a>
     			    </li>
     			    <li>
-    			    	<a href="">SOCIAL</a>
+    			    	<a href="#social">SOCIAL</a>
     			    </li>
                     <li>
-                        <a href="">CONTACT</a>
+                        <a href="#contact">CONTACT</a>
                     </li>
     			</ul>
     		</nav>
         </div>
     </header> 
     <main>
-    	<section class="intro">               
+    	<section class="intro" id="home">               
             <div class="intro-text container">
     			<h1>Premium Quality & Tradition</h1>
                 <div class="since">
                     <img src="images/Left Line.svg">
     				<p>SINCE 1978</p>
                     <img src="images/Right Line.svg">
-                </div>  
-                <div class="arrow">
-                    <img src="images/Scroll Arrow.svg">
-                </div>                      
+                </div>                  
+                <img src="images/Scroll Arrow.svg">                                    
             </div>                                       			
     	</section> 
 
-        <section class="team">
+        <section class="team" id="about">
             <div class="section title">
                 <h2>Meet Our Team</h2>
                 <img src="images/About Us Underline.svg" class="underline">
@@ -78,7 +76,7 @@
             </div>
         </section>
 
-        <section class="social">
+        <section class="social" id="social">
             <div class="social container">
                 <div class="slider">
                         <img src="images/Left arrow.png">
@@ -96,7 +94,7 @@
             </div>
         </section>
 
-        <section class="contact">
+        <section class="contact" id="contact">
                 <div class="section title">
                    <h2>Contact Us</h2>
                    <img src="images/About Us Underline.svg">
@@ -115,8 +113,10 @@
                             <button type="submit">SEND</button>
                         </form>
                     </div>
-                    <div class="map container">                       
+                    <div class="map container">  
+                        <div class="frame">                    
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.978380228511!2d-73.98345804885578!3d40.76250024235961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258f85f98272f%3A0x7ab3fbafc075fad7!2s811+7th+Ave%2C+New+York%2C+NY+10019%2C+USA!5e0!3m2!1sen!2slt!4v1545129954941" width="450" height="280" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </div>
                             <div class="adress">
                               <p>811 7th Avenue 53rd Street
                               New York, 10019, United States</p>
