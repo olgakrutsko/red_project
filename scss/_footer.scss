@@ -1,0 +1,41 @@
+footer {
+    background-color: $grey;
+    
+    .nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Sintony', sans-serif;
+        padding-top: 4rem;
+   
+    .social {
+        display: flex;
+        justify-content: center;
+        padding: 2rem 0 4rem 0;
+   
+    .copyright {
+        background-color: #2E2E2E;
+        color: $color-bgr;
+        padding: 0.9rem 0 0.9rem 0;
+        display: flex;
+        justify-content: center;
+        font-family: 'Verdana', sans-serif;
+        font-size: 0.85rem;
+        color: #585858;  
+
+    li {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0 1.2rem 0 1.2rem;
+   
+        a {
+            text-decoration: none;
+            color: $color-bgr;
+            font-size: 1rem;
+        }     
+    }
+    }
+    }
+    }
+}
+

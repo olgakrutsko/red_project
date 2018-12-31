@@ -19,13 +19,13 @@ header {
   z-index: 1;
 }
 .navigation {
-  padding: 30px 0 30px 0;
+  padding: 2.14rem 0 2.14rem 0;
   display: flex;
   justify-content: space-around;
   font-family: 'Sintony', sans-serif;
   }
   header li {
-    padding-top: 10px;
+    padding-top: 0.7rem;
     display: inline-block;
   }
   header li a {
@@ -34,7 +34,7 @@ header {
     color: white;
     font-size: 1rem;
   }
-  header li a:hover {
+  li a:hover {
     border-bottom: 0.2rem solid white;
   }
 .intro {
@@ -59,25 +59,26 @@ header {
     text-align: center;
     } 
   .since {
-    display: flex;
     padding-top: 1.8rem;
     padding-bottom: 30vh;
+    display: flex;
+    justify-content: center;
     }
   .since p {
     font-style: italic;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin: 0 1.2rem 0 1.2rem;
     }
   .team .container {
     display: flex; 
     justify-content: center;
-    padding: 0 30px 0 30px;
-    margin-bottom: 70px;
+    padding: 0 2.14rem 0 2.14rem;
+    margin-bottom: 5rem;
     }
   .team .member {
-    min-width: 280px;
-    margin-right: 25px;
-    margin-left: 25px;
+    /*min-width: 280px;*/
+    margin-right: 1.8rem;
+    margin-left: 1.8rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -119,17 +120,25 @@ header {
    }
    .social .follow {
      padding-bottom: 3.7rem;
-     padding-top: 3.7rem;
+     padding-top: 2.7rem;
      display: flex;
      justify-content: center;
-     }
+   }
+   .arrow {
+    display: flex;
+    align-items: center;
+
+   }
+   .gallery {
+    display: flex;
+    justify-content: center;
+   }
    .slider {
      display: flex;
-     align-items: center;
      justify-content: center;
    }
    .slider img {
-     padding: 0 14px 0 14px;
+     padding: 0 1rem 1rem 1rem;
    }
 
 .contact {
@@ -147,42 +156,43 @@ header {
      justify-content: center;
   } 
   .form form {
-    margin-right: 36px;
+    margin-right: 2.57rem;
   }
   input, textarea {
     border: 0;
     outline: 0;
-    padding: 15px 0 15px 25px;
-    margin-bottom: 20px;
-    width: 450px;
+    padding: 1.2rem 0 1.2rem 1.78rem;
+    margin-bottom: 1.42rem;
+    width: 32.1rem;
     font-family: 'Libre Baskerville', serif;
     font-size: 1.2rem;
-    border-radius: 5px;
+    border-radius: 0.35rem;
   }
   button {
     width: 100%;
     border: 0;
     background-color: #333333;
     color: white;
-    border-radius: 5px;
+    border-radius: 0.35rem;
     font-family: 'Libre Baskerville', serif;
     font-size: 1.4rem;
-    padding: 15px 0 15px 0;
+    padding: 1.1rem 0 1.1rem 0;
   }
   .map {
      display: flex;
      flex-direction: column;
-     padding-bottom: 85px;
+     padding-bottom: 6.07rem;
 
      }
   .map .frame {
-    max-height: 280px;
-    border-radius: 5px;
+    height: 20rem;
+    width: 32.14rem;
+    border-radius: 0.35rem;
     overflow: hidden;
     }
   .adress {
-      max-width: 450px;
-      padding: 30px 40px 0 40px;
+      max-width: 32.14rem;
+      padding: 2.14rem 2.85px 0 2.85px;
   }
   .map p {
       font-size: 1.2rem;
@@ -227,6 +237,49 @@ footer {
      font-family: 'Verdana', sans-serif;
      font-size: 0.85rem;
      color: #585858;  
+   }
+   @media (max-width: 1024px) {
+     .team .container {
+         flex-wrap: wrap;
+      }
+      .intro h1 {
+         margin: 0 2rem 0 2rem;
+         line-height: 4rem;
+      } 
+     .team .member {
+         margin-bottom: 3rem;
+      } 
+     .gallery {
+         flex-wrap: wrap;
+      }
+     .contact {
+         flex-wrap: wrap;
+      }
+     .form {
+         margin-bottom: 3rem;
+      }    
+     .form form {
+         margin-right: 0;
+      }       
+   }
+   @media (max-width: 580px) {
+      .navigation {      
+         flex-direction: column;
+      }
+      .logo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+      }
+      .form input, textarea {    
+        width: 20rem;
+      }
+      .map .frame {
+        width: 20rem;
+      }
+      .frame {
+        align-self: center;
+      }
    }
 
 
